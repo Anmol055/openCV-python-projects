@@ -20,7 +20,7 @@ while cap.isOpened():
     # cv.drawContours(frame1, contours, -1, (0,255,0),2)
     for contour in contours:
          (x,y,w,h) = cv.boundingRect(contour)
-         if cv.contourArea(contour) < 900:
+         if cv.contourArea(contour) < 500:
               continue
          cv.rectangle(frame1, (x,y), (x+w, y+h), (0,255,0), 2)
          cv.putText(frame1, 'Status: {}'.format('movement'), (10,20), cv.FONT_HERSHEY_SIMPLEX, 1,(0,0,255), 3)

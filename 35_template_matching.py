@@ -7,11 +7,11 @@ template = cv.imread('media/football.jpg',0)
 
 w,h = template.shape[::-1]
 res = cv.matchTemplate(gray_img, template, cv.TM_CCOEFF_NORMED)
-print(res)
-print()
+# print(res)
+# print()
 threshold = 0.9
 loc = np.where(res >= threshold)
-print(loc)
+# print(loc)
 for pt in zip(*loc[::-1]):
     cv.rectangle(img, pt, (pt[0]+w , pt[1]+h), (0,0,255), 2)
 
