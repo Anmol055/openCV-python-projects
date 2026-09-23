@@ -1,0 +1,18 @@
+/not_on_github
+/classifiers/haarcascade_lowerbody.xml
+/classifiers/haarcascade_upperbody.xml
+
+#ignoring everything in media directory
+/media/*
+#excluding specific files from being ignored
+!/media/binary_image.png
+!/media/butterfly_gold3.jpg
+!/media/butterfly_pink.jpg
+!/media/cars.mp4
+!/media/cyclist.mp4
+!/media/football.jpg
+!/media/gems.jpg
+!/media/lena.jpg
+!/media/messi5.jpg
+!/media/people.mp4
+!/media/test_video.mp4
